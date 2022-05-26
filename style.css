@@ -1,0 +1,149 @@
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin-top: 40px;
+}
+
+body {
+    margin: 0px;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+#home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+    font-family: 'Satisfy', cursive;
+    background-color: #0061F2;
+}
+
+#message-container {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message {
+    font-size: 60px;
+}
+
+.sub-message {
+    margin-top: 3vh;
+    font-family: 'Domine';
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.chevron {
+    margin-left: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chevron-msg {
+    visibility: hidden;
+    margin-top: 6vh;
+    font-size: 2rem;
+    color: #333;
+
+}
+
+a.chevron {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a.chevron {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 25vw;
+    /* border: solid 4px yellow; */
+}
+
+.gg-chevron-double-down {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 22px;
+    height: 22px
+}
+
+.gg-chevron-double-down:hover {
+    color: #333;
+    /* box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c; */
+    transform: translateY(3px);
+}
+
+.gg-chevron-double-down:hover+.chevron-msg {
+    visibility: visible;
+}
+
+.gg-chevron-double-down::after,
+.gg-chevron-double-down::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+
+
+}
+
+.gg-chevron-double-down::after {
+    top: 14px
+}
+
+#portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+    font-family: 'Satisfy', cursive;
+    background-color: #333;
+}
