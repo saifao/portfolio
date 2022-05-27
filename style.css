@@ -10,20 +10,14 @@ body {
     margin: 0px;
 }
 
-
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
     position: fixed;
-    /* Set the navbar to fixed position */
     top: 0;
-    /* Position the navbar at the top of the page */
     width: 100%;
-    /* Full width */
-
 }
 
-/* Links inside the navbar */
 .navbar a {
     float: left;
     display: block;
@@ -33,7 +27,6 @@ body {
     text-decoration: none;
 }
 
-/* Change background on mouse-over */
 .navbar a:hover {
     background: #ddd;
     color: black;
@@ -44,7 +37,8 @@ body {
     grid-template-columns: 1fr 1fr;
     height: 80vh;
     font-family: 'Satisfy', cursive;
-    background-color: #0061F2;
+    color: #f2f2f2;
+    background-color: #333;
 }
 
 #message-container {
@@ -76,7 +70,7 @@ body {
     visibility: hidden;
     margin-top: 6vh;
     font-size: 2rem;
-    color: #333;
+    color: #f2f2f2;
 
 }
 
@@ -112,7 +106,7 @@ a.chevron {
 }
 
 .gg-chevron-double-down:hover {
-    color: #333;
+    color: #f2f2f2;
     /* box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c; */
     transform: translateY(3px);
 }
@@ -132,8 +126,6 @@ a.chevron {
     border-bottom: 2px solid;
     border-right: 2px solid;
     transform: rotate(45deg);
-
-
 }
 
 .gg-chevron-double-down::after {
@@ -142,7 +134,53 @@ a.chevron {
 
 #portfolio {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    background-color: #e1f1ff;
+    font-family: Hind Siliguri, Helvetica, Arial, sans-serif;
+    padding-top: 2vh;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-link>h1 {
+    font-family: Martel, Times New Roman, Times, serif;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+.project-link>img {
+    width: 80%;
+}
+
+.project-container>p {
+    color: #838383;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.project-container>article {
+    color: #838383;
+    font-weight: 300;
+    font-size: 1.3rem;
+    width: 80%;
+}
+
+
+#other {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 80vh;
     font-family: 'Satisfy', cursive;
     background-color: #333;

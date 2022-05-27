@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Mochiy+Pop+P+One&family=Sedgwick+Ave&display=swap"
+        rel="stylesheet">
+    <link href="/normalize.css" rel="stylesheet">
+    <style>
+        header {
+            text-align: center;
+            background: url('https://i.imgur.com/CjccZrL.jpg?1');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #222222;
+            color: white;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        a {
+            color: white;
+        }
+
+        h1 {
+            font-size: 70px;
+            font-family: 'Lobster', cursive;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 40px;
+            margin: 40px 0px 0px 0px;
+            border: 7px solid white;
+        }
+
+        ul {
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        li {
+            display: inline;
+            padding: 0px 10px 0px 10px;
+        }
+
+        li:hover {
+            background: black;
+            padding: 10px
+        }
+
+        button {
+            background: none;
+            color: #ffa260;
+            border: 2px solid;
+            padding: 6px 12px;
+            font-size: 22px;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            border-color: #f1ff5c;
+            color: white;
+            box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+            transform: translateY(-3px);
+        }
+
+        article {
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+            border-right: 1px solid #e1f1ff;
+        }
+
+        article:last-child {
+            border-right: none;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 36px;
+                padding: 5px;
+            }
+
+            li {
+                padding: 5px;
+                display: block;
+            }
+
+            img {
+                width: 100px;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                margin: 20px 0px 0px 0px;
+                border: 7px solid white;
+            }
+
+            div {
+                flex-direction: column;
+            }
+
+            article {
+                border-right: none;
+                border-bottom: 1px solid #e1f1ff;
+            }
+
+            article:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://i.imgur.com/RNySuqk.jpg?2">
+        <h1>Saif's Blog</h1>
+        <ul>
+            <li><a href="https://dash.generalassemb.ly/aosaif/build-your-own-personal-website">About Me</a></li>
+            <li><a href="https://dash.generalassemb.ly/aosaif/build-your-own-blog-theme">Blog</a></li>
+            <li><a href="https://dash.generalassemb.ly/aosaif/build-your-own-business-website/">Bakery</a></li>
+        </ul>
+    </header>
+    <div>
+        <article>
+            <h2>Czech Republic</h2>
+            <h3>...and the story of the Original Pilsner!</h3>
+            <p>Of all the beers, pilsner has one of the coolest histories.
+                <br><br>
+                Named after the Czech Republic town (Plzen) it was born in, pilsner is the planet’s original pale lager.
+                It has since become one of the most brewed and guzzled beer styles anywhere.
+                <br><br>
+                One of the most interesting aspects of its origin story is that pilsner literally turned the game on its
+                head. Prior to its invention in the mid-19th century, brewers top-fermented their beers. Essentially,
+                this means that the wort was pitched yeast on the surface to get the fermentation process rolling.
+                Brewing this way requires higher temperatures and could result in irregularities and off-flavors or
+                aromas.
+                <br><br>
+                The pilsner was the first true bottom-fermented beer. The process tends to be a bit slower, involves
+                lower temperatures, and almost always yields a cleaner beer. To this day, ale implies top-fermented
+                while lager stands for bottom-fermented.
+            </p>
+            <button>Like</button>
+        </article>
+        <article>
+            <h2>Slovakia</h2>
+            <h3>...or in other words, the 100-Castle country!</h3>
+            <p>Veľký Choč is a handsome peak, wrote Pavol Országh Hviezdoslav, one of the most popular Slovak poets from
+                the beginning of the 20th century. He was born there. Right under it, in its shadow.
+                <br><br>
+                The steep and high rocks proudly protect all inhabitants of the Orava and Liptov regions, both wild and
+                amazing parts of Slovakia, and many ways reminiscent of Scandinavia.
+                <br><br>
+                The 1,611 m high Veľký Choč is the highest mountain of the Chočské vrchy mountains. They lay the west of
+                the only Slovak alpine type mountain, the High Tatras, and connect them with the Malá and Veľká Fatra
+                Mountains. They bulk out the Liptovská dolina valley, and gaze down to the Liptovská Mara reservoir.
+                There are sheep cropping the grass in, playful shepherd dogs in the summer.
+                <br><br>
+                One of the most beautiful mountain ranges in Slovakia.
+            </p>
+            <button>Like</button>
+        </article>
+        <article>
+            <h2>Montenegro</h2>
+            <h3>...enjoy 5 climates...within a 2 hr drive!</h3>
+            <p>Durmitor is a stunning limestone massif located in Northern Montenegro and belonging to the Dinaric Alps
+                or Dinarides. It is also the name of Montenegro's largest protected area, the Durmitor National Park,
+                which constitutes the heart of a landscape shaped by glaciers, numerous rivers and underground streams
+                of which are embedded in the much larger Tara River Basin Biosphere Reserve.
+                <br><br>
+                Some fifty peaks higher than 2,000 metres above sea level rise above plateaus, alpine meadows and
+                forests, including Bobotov Peak (2,525 metres above sea level). Numerous glacial lakes, locally known as
+                “mountain eyes”, cover the landscape. Despite its many attractions, Durmitor is best known for the
+                spectacular canyons of the Draga, Sušica, Komarnica and Tara Rivers, the latter stands out as Europe's
+                deepest gorge.
+                <br><br>
+                Durmitor is a popular tourism destination, known for superb hiking, climbing, mountaineering and
+                canoeing opportunities. The nearby town of Zabljak is Montenegro’s primary ski resort.
+            </p>
+            <button>Like</button>
+        </article>
+    </div>
+    <script>
+        $("button").on("click", function () {
+            alert("Clicked!");
+        });
+    </script>
+</body>
