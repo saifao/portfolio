@@ -11,6 +11,8 @@ body {
 }
 
 .navbar {
+    display: flex;
+    justify-content: flex-start;
     overflow: hidden;
     background-color: black;
     position: fixed;
@@ -30,6 +32,10 @@ body {
 .navbar a:hover {
     background: #ddd;
     color: black;
+}
+
+.navbar-right {
+    float: right;
 }
 
 #home {
@@ -59,35 +65,17 @@ body {
     width: 80%;
 }
 
-.chevron {
-    margin-left: 30vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.chevron-msg {
-    visibility: hidden;
-    margin-top: 6vh;
-    font-size: 2rem;
-    color: #f2f2f2;
-
-}
-
-a.chevron {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-a.chevron {
-    color: inherit;
-    text-decoration: inherit;
-}
-
 #profile-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
     align-items: center;
+    grid-template-rows: 5fr 1fr;
+
+}
+
+.arrow {
+    justify-self: end;
+    padding-right: 1rem;
 }
 
 .profile {
@@ -96,46 +84,28 @@ a.chevron {
     /* border: solid 4px yellow; */
 }
 
-.gg-chevron-double-down {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs, 1));
-    width: 22px;
-    height: 22px
+
+.section-header {
+    text-align: center;
+    background-color: #e1f1ff;
+    margin: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.gg-chevron-double-down:hover {
-    color: #f2f2f2;
-    /* box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c; */
-    transform: translateY(3px);
-}
-
-.gg-chevron-double-down:hover+.chevron-msg {
-    visibility: visible;
-}
-
-.gg-chevron-double-down::after,
-.gg-chevron-double-down::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 28px;
-    height: 28px;
-    border-bottom: 2px solid;
-    border-right: 2px solid;
-    transform: rotate(45deg);
-}
-
-.gg-chevron-double-down::after {
-    top: 14px
+.section-header-alternate {
+    text-align: center;
+    color: #e1f1ff;
+    background-color: #333;
+    margin: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 100vh;
+    height: 110vh;
     background-color: #e1f1ff;
     font-family: Hind Siliguri, Helvetica, Arial, sans-serif;
     padding-top: 2vh;
@@ -157,10 +127,12 @@ a.chevron {
     font-family: Martel, Times New Roman, Times, serif;
     font-weight: 900;
     font-size: 1.7rem;
+    padding-bottom: 1rem;
 }
 
 .project-link>img {
     width: 80%;
+    padding-bottom: 2rem;
 }
 
 .project-container>p {
@@ -177,11 +149,19 @@ a.chevron {
     width: 80%;
 }
 
+.end-item {
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+}
 
-#other {
+#marketing-bi {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 80vh;
-    font-family: 'Satisfy', cursive;
+    height: 130vh;
     background-color: #333;
+}
+
+#marketing-bi>.project-container>h1 {
+    color: #f2f2f2;
+    text-align: center;
 }
