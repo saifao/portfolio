@@ -165,3 +165,10 @@ body {
     color: #f2f2f2;
     text-align: center;
 }
+
+#contact {
+    text-align: center;
+    height: 50vh;
+    background-color: #e1f1ff;
+    font-family: Martel, Times New Roman, Times, serif;
+}
