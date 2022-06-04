@@ -1,41 +1,10 @@
 html {
     scroll-behavior: smooth;
-}
-
-main {
-    margin-top: 40px;
+    scroll-padding-top: 3rem;
 }
 
 body {
     margin: 0px;
-}
-
-.navbar {
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    background: #ddd;
-    color: black;
-}
-
-.navbar-right {
-    float: right;
 }
 
 #home {
@@ -98,7 +67,6 @@ body {
     .sub-message {
         font-size: 1rem;
     }
-
 }
 
 @media (max-width: 800px) {
@@ -114,6 +82,10 @@ body {
 
     .about-me {
         text-align: justify;
+    }
+
+    html {
+        scroll-padding-top: 22rem;
     }
 }
 
@@ -154,7 +126,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 315px;
+    width: 300px;
     margin-bottom: 2vh;
 }
 
