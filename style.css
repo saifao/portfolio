@@ -39,19 +39,18 @@ body {
 }
 
 #home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Satisfy', cursive;
     color: #f2f2f2;
     background-color: #333;
 }
 
 #message-container {
-    margin-left: 10%;
+    margin: 10vh 0vw 10vh 6vw;
+    flex: 1 1 25%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .message {
@@ -66,23 +65,63 @@ body {
 }
 
 #profile-container {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-rows: 5fr 1fr;
-
-}
-
-.arrow {
-    justify-self: end;
-    padding-right: 1rem;
+    margin: 8vh 0vw 0vh 4vw;
+    flex: 3 3 25%;
 }
 
 .profile {
+    float: left;
+    margin: 0vh 2vw 1vh 0;
     border-radius: 50%;
-    width: 25vw;
+    width: 150px;
+    shape-outside: circle();
     /* border: solid 4px yellow; */
 }
+
+.about-me {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #cac7c7;
+    font-weight: 300;
+    font-size: 1rem;
+    width: 80%;
+}
+
+@media (max-width: 1200px) {
+    #message-container {
+        margin-left: 2vw;
+    }
+
+    .message {
+        font-size: 40px;
+    }
+
+    .sub-message {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+    #message-container {
+        margin: 10vh 0vw 2vh 6vw;
+        flex: 1 1 100%;
+    }
+
+    #profile-container {
+        margin: 2vh 0vw 0vh 4vw;
+        flex: 1 1 100%;
+    }
+
+    .about-me {
+        text-align: justify;
+    }
+}
+
+.arrow {
+    align-self: flex-end;
+    padding-right: 1rem;
+}
+
 
 
 .section-header {
@@ -103,18 +142,20 @@ body {
 }
 
 #portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 110vh;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #e1f1ff;
     font-family: Hind Siliguri, Helvetica, Arial, sans-serif;
     padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 .project-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 315px;
+    margin-bottom: 2vh;
 }
 
 .project-link {
@@ -131,8 +172,8 @@ body {
 }
 
 .project-link>img {
-    width: 80%;
     padding-bottom: 2rem;
+    width: 80%;
 }
 
 .project-container>p {
@@ -143,7 +184,7 @@ body {
 }
 
 .project-container>article {
-    color: #838383;
+    color: #575656;
     font-weight: 300;
     font-size: 1.3rem;
     width: 80%;
@@ -155,15 +196,34 @@ body {
 }
 
 #marketing-bi {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 130vh;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #333;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 #marketing-bi>.project-container>h1 {
     color: #f2f2f2;
     text-align: center;
+    font-family: Martel, Times New Roman, Times, serif;
+    font-weight: 900;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+#marketing-bi>.project-container>p {
+    color: #aba8a8;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#marketing-bi>.project-container>article {
+    color: #cac7c7;
+    font-weight: 300;
+    font-size: 1.3rem;
+    width: 80%;
 }
 
 #contact {
