@@ -15,8 +15,6 @@ hr {
     display: none;
 }
 
-
-
 #home {
     display: flex;
     flex-wrap: wrap;
@@ -65,79 +63,17 @@ hr {
     width: 95%;
 }
 
-@media (max-width: 1200px) {
-    #message-container {
-        margin-left: 2vw;
-    }
-
-    .message {
-        font-size: 40px;
-    }
-
-    .sub-message {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 800px) {
-    .custom-navbar-title {
-        display: inline;
-        font-size: 1.25rem;
-        color: #fff;
-        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        text-decoration: none;
-    }
-
-    .custom-navbar-title:hover {
-        color: #fff;
-    }
-
-    #message-container {
-        margin: 3vh 0vw 2vh 6vw;
-        flex: 1 1 100%;
-    }
-
-    #profile-container {
-        margin: 2vh 0vw 0vh 4vw;
-        flex: 1 1 100%;
-    }
-
-    #portfolio,
-    #marketing-bi {
-        display: flex;
-        justify-content: center;
-    }
-
-    .about-me {
-        text-align: justify;
-    }
-
-    #education>table {
-        width: 90%;
-    }
-
-    hr {
-        display: block;
-    }
-
-    html {
-        scroll-padding-top: 22rem;
-    }
-}
-
 .arrow {
     align-self: flex-end;
     padding-right: 1rem;
 }
-
-
 
 .section-header {
     text-align: center;
     background-color: #e1f1ff;
     margin: 0px;
     padding-top: 1rem;
-    /* padding-bottom: 1rem; */
+    padding-bottom: 1rem;
 }
 
 .section-header-alternate {
@@ -154,7 +90,6 @@ hr {
     flex-wrap: wrap;
     background-color: #e1f1ff;
     font-family: Hind Siliguri, Helvetica, Arial, sans-serif;
-    /* padding-top: 2vh; */
     padding-bottom: 2vh;
 }
 
@@ -254,4 +189,80 @@ table {
     color: #f2f2f2;
     background-color: #333;
     font-family: Martel, Times New Roman, Times, serif;
+}
+
+@media (max-width: 1200px) {
+    #message-container {
+        margin-left: 2vw;
+    }
+
+    .message {
+        font-size: 40px;
+    }
+
+    .sub-message {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .custom-navbar-title {
+        display: inline;
+        font-size: 1.25rem;
+        color: #fff;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        text-decoration: none;
+    }
+
+    .custom-navbar-title:hover {
+        color: #fff;
+    }
+
+    #message-container {
+        margin: 3vh 0vw 2vh 6vw;
+        flex: 1 1 100%;
+    }
+
+    #profile-container {
+        margin: 2vh 0vw 0vh 4vw;
+        flex: 1 1 100%;
+    }
+
+    .about-me {
+        text-align: justify;
+    }
+
+    #portfolio,
+    #marketing-bi {
+        display: flex;
+        justify-content: center;
+    }
+
+    #education>table {
+        width: 90%;
+    }
+
+    hr {
+        display: block;
+    }
+
+    html {
+        scroll-padding-top: 22rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .project-container {
+        margin-top: 3vh;
+        width: 95%;
+    }
+
+    .project-container>article {
+        width: 95%;
+    }
+
+    #marketing-bi>.project-container {
+        width: 95%;
+    }
+
 }
