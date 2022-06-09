@@ -251,7 +251,7 @@ table {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .project-container {
         margin-top: 3vh;
         width: 95%;
