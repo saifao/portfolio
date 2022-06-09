@@ -7,6 +7,16 @@ body {
     margin: 0px;
 }
 
+hr {
+    display: none;
+}
+
+.custom-navbar-title {
+    display: none;
+}
+
+
+
 #home {
     display: flex;
     flex-wrap: wrap;
@@ -70,8 +80,20 @@ body {
 }
 
 @media (max-width: 800px) {
+    .custom-navbar-title {
+        display: inline;
+        font-size: 1.25rem;
+        color: #fff;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        text-decoration: none;
+    }
+
+    .custom-navbar-title:hover {
+        color: #fff;
+    }
+
     #message-container {
-        margin: 10vh 0vw 2vh 6vw;
+        margin: 3vh 0vw 2vh 6vw;
         flex: 1 1 100%;
     }
 
@@ -80,8 +102,22 @@ body {
         flex: 1 1 100%;
     }
 
+    #portfolio,
+    #marketing-bi {
+        display: flex;
+        justify-content: center;
+    }
+
     .about-me {
         text-align: justify;
+    }
+
+    #education>table {
+        width: 90%;
+    }
+
+    hr {
+        display: block;
     }
 
     html {
