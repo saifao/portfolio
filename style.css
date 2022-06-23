@@ -138,16 +138,19 @@ hr {
     text-align: center;
 }
 
+.link-container {
+    margin: 10px 0px;
+}
+
+.link-container>a {
+    color: inherit;
+}
+
 .project-container>article {
     color: #575656;
     font-weight: 300;
     font-size: 1.3rem;
     width: 80%;
-}
-
-.end-item {
-    display: grid;
-    grid-template-rows: 6fr 1fr;
 }
 
 #marketing-bi {
@@ -289,5 +292,6 @@ hr {
     #marketing-bi>.project-container>article {
         width: 95%;
     }
+
 
 }
