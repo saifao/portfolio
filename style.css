@@ -41,6 +41,15 @@ hr {
     width: 80%;
 }
 
+#skills {
+    font-family: 'Domine';
+    font-size: 1.2rem;
+}
+
+.skills-section {
+    font-family: 'Domine';
+}
+
 #profile-container {
     margin: 8vh 0vw 0vh 4vw;
     flex: 3 3 25%;
@@ -88,6 +97,7 @@ hr {
 #portfolio {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: #e1f1ff;
     font-family: Hind Siliguri, Helvetica, Arial, sans-serif;
     padding-bottom: 2vh;
@@ -143,6 +153,7 @@ hr {
 #marketing-bi {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: #333;
     padding-top: 2vh;
     padding-bottom: 2vh;
@@ -178,16 +189,26 @@ hr {
 
 }
 
-table {
+#education-table {
     width: 50%;
     background-color: #e1f1ff;
+}
+
+#certificates {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+#certificates-table {
+    width: 50%;
+    color: #e1f1ff;
 }
 
 #contact {
     text-align: center;
     height: 50vh;
-    color: #f2f2f2;
-    background-color: #333;
+    background-color: #e1f1ff;
     font-family: Martel, Times New Roman, Times, serif;
 }
 
@@ -238,7 +259,11 @@ table {
         justify-content: center;
     }
 
-    #education>table {
+    #education-table {
+        width: 90%;
+    }
+
+    #certificates-table {
         width: 90%;
     }
 
