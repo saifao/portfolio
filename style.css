@@ -1,297 +1,304 @@
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 3rem;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
 }
 
 body {
-    margin: 0px;
+  margin: 0px;
 }
 
 hr {
-    display: none;
+  display: none;
 }
 
 .custom-navbar-title {
-    display: none;
+  display: none;
+}
+
+#dashboard {
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 #home {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Satisfy', cursive;
-    color: #f2f2f2;
-    background-color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Satisfy", cursive;
+  color: #f2f2f2;
+  background-color: #333;
 }
 
 #message-container {
-    margin: 10vh 0vw 10vh 6vw;
-    flex: 1 1 25%;
-    display: flex;
-    flex-direction: column;
+  margin: 10vh 0vw 10vh 6vw;
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
 }
 
 .message {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .sub-message {
-    margin-top: 3vh;
-    font-family: 'Domine';
-    font-size: 1.2rem;
-    width: 80%;
+  margin-top: 3vh;
+  font-family: "Domine";
+  font-size: 1.2rem;
+  width: 80%;
 }
 
 #skills {
-    font-family: 'Domine';
-    font-size: 1.2rem;
+  font-family: "Domine";
+  font-size: 1.2rem;
 }
 
 .skills-section {
-    font-family: 'Domine';
+  font-family: "Domine";
 }
 
 #profile-container {
-    margin: 8vh 0vw 0vh 4vw;
-    flex: 3 3 25%;
+  margin: 8vh 0vw 0vh 4vw;
+  flex: 3 3 25%;
 }
 
 .profile {
-    display: inline;
-    margin: 0vh 2vw 1vh 0;
-    border-radius: 50%;
-    width: 100px;
-    shape-outside: circle();
-    /* border: solid 4px yellow; */
+  display: inline;
+  margin: 0vh 2vw 1vh 0;
+  border-radius: 50%;
+  width: 100px;
+  shape-outside: circle();
+  /* border: solid 4px yellow; */
 }
 
 .about-me {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    color: #cac7c7;
-    font-weight: 300;
-    font-size: 1rem;
-    width: 95%;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #cac7c7;
+  font-weight: 300;
+  font-size: 1rem;
+  width: 95%;
 }
 
 .arrow {
-    align-self: flex-end;
-    padding-right: 1rem;
+  align-self: flex-end;
+  padding-right: 1rem;
 }
 
 .section-header {
-    text-align: center;
-    background-color: #e1f1ff;
-    margin: 0px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  text-align: center;
+  background-color: #e1f1ff;
+  margin: 0px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .section-header-alternate {
-    text-align: center;
-    color: #e1f1ff;
-    background-color: #333;
-    margin: 0px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  text-align: center;
+  color: #e1f1ff;
+  background-color: #333;
+  margin: 0px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #e1f1ff;
-    font-family: Hind Siliguri, Helvetica, Arial, sans-serif;
-    padding-bottom: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #e1f1ff;
+  font-family: Hind Siliguri, Helvetica, Arial, sans-serif;
+  padding-bottom: 2vh;
 }
 
 .project-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 2vh;
 }
 
 .project-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 230px;
 }
 
-.project-link>h1 {
-    font-family: Martel, Times New Roman, Times, serif;
-    font-weight: 900;
-    font-size: 1.7rem;
-    padding-bottom: 1rem;
+.project-link > h1 {
+  font-family: Martel, Times New Roman, Times, serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
 }
 
-.project-link>img {
-    padding-bottom: 1rem;
-    width: 80%;
+.project-link > img {
+  padding-bottom: 1rem;
+  width: 80%;
 }
 
-.project-container>p {
-    color: #838383;
-    font-weight: 300;
-    font-size: 1rem;
-    text-align: center;
+.project-container > p {
+  color: #838383;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .link-container {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 
-.link-container>a {
-    color: inherit;
+.link-container > a {
+  color: inherit;
 }
 
-.project-container>article {
-    color: #575656;
-    font-weight: 300;
-    font-size: 1.3rem;
-    width: 80%;
+.project-container > article {
+  color: #575656;
+  font-weight: 300;
+  font-size: 1.3rem;
+  width: 80%;
 }
 
 #marketing-bi {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #333;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #333;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
-#marketing-bi>.project-container>h1 {
-    color: #f2f2f2;
-    text-align: center;
-    font-family: Martel, Times New Roman, Times, serif;
-    font-weight: 900;
-    font-size: 1.7rem;
-    padding-bottom: 1rem;
+#marketing-bi > .project-container > h1 {
+  color: #f2f2f2;
+  text-align: center;
+  font-family: Martel, Times New Roman, Times, serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
 }
 
-#marketing-bi>.project-container>p {
-    color: #aba8a8;
-    font-weight: 300;
-    font-size: 1rem;
-    text-align: center;
+#marketing-bi > .project-container > p {
+  color: #aba8a8;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
 }
 
-#marketing-bi>.project-container>article {
-    color: #cac7c7;
-    font-weight: 300;
-    font-size: 1.3rem;
-    width: 80%;
+#marketing-bi > .project-container > article {
+  color: #cac7c7;
+  font-weight: 300;
+  font-size: 1.3rem;
+  width: 80%;
 }
 
 #education {
-    display: flex;
-    justify-content: center;
-    background-color: #e1f1ff;
-
+  display: flex;
+  justify-content: center;
+  background-color: #e1f1ff;
 }
 
 #education-table {
-    width: 50%;
-    background-color: #e1f1ff;
+  width: 50%;
+  background-color: #e1f1ff;
 }
 
 #certificates {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
 }
 
 #certificates-table {
-    width: 50%;
-    color: #e1f1ff;
+  width: 50%;
+  color: #e1f1ff;
 }
 
 #contact {
-    text-align: center;
-    height: 50vh;
-    background-color: #e1f1ff;
-    font-family: Martel, Times New Roman, Times, serif;
+  text-align: center;
+  height: 50vh;
+  background-color: #e1f1ff;
+  font-family: Martel, Times New Roman, Times, serif;
 }
 
 @media (max-width: 1200px) {
-    #message-container {
-        margin-left: 2vw;
-    }
+  #message-container {
+    margin-left: 2vw;
+  }
 
-    .message {
-        font-size: 40px;
-    }
+  .message {
+    font-size: 40px;
+  }
 
-    .sub-message {
-        font-size: 1rem;
-    }
+  .sub-message {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 800px) {
-    .custom-navbar-title {
-        display: inline;
-        font-size: 1.25rem;
-        color: #fff;
-        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        text-decoration: none;
-    }
+  .custom-navbar-title {
+    display: inline;
+    font-size: 1.25rem;
+    color: #fff;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-decoration: none;
+  }
 
-    .custom-navbar-title:hover {
-        color: #fff;
-    }
+  .custom-navbar-title:hover {
+    color: #fff;
+  }
 
-    #message-container {
-        margin: 3vh 0vw 2vh 6vw;
-        flex: 1 1 100%;
-    }
+  #message-container {
+    margin: 3vh 0vw 2vh 6vw;
+    flex: 1 1 100%;
+  }
 
-    #profile-container {
-        margin: 2vh 0vw 0vh 4vw;
-        flex: 1 1 100%;
-    }
+  #profile-container {
+    margin: 2vh 0vw 0vh 4vw;
+    flex: 1 1 100%;
+  }
 
-    .about-me {
-        text-align: justify;
-    }
+  .about-me {
+    text-align: justify;
+  }
 
-    #portfolio,
-    #marketing-bi {
-        display: flex;
-        justify-content: center;
-    }
+  #portfolio,
+  #marketing-bi {
+    display: flex;
+    justify-content: center;
+  }
 
-    #education-table {
-        width: 90%;
-    }
+  #education-table {
+    width: 90%;
+  }
 
-    #certificates-table {
-        width: 90%;
-    }
+  #certificates-table {
+    width: 90%;
+  }
 
-    hr {
-        display: block;
-    }
+  hr {
+    display: block;
+  }
 
-    html {
-        scroll-padding-top: 22rem;
-    }
+  html {
+    scroll-padding-top: 22rem;
+  }
 }
 
 @media (max-width: 450px) {
-    .project-container {
-        margin-top: 3vh;
-        width: 95%;
-    }
+  .project-container {
+    margin-top: 3vh;
+    width: 95%;
+  }
 
-    .project-container>article {
-        width: 95%;
-    }
+  .project-container > article {
+    width: 95%;
+  }
 
-    #marketing-bi>.project-container>article {
-        width: 95%;
-    }
-
-
+  #marketing-bi > .project-container > article {
+    width: 95%;
+  }
 }
