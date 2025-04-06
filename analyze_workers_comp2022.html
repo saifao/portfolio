@@ -5,37 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>analyze_workers_comp2022</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Domine&family=Martel:wght@900&family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
-    <script
-      defer
-      src="https://kit.fontawesome.com/4cddd95cfe.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="script.js"></script>
     <script type="module">
       import mermaid from "";
       mermaid.initialize({ startOnLoad: true });
@@ -13833,56 +13802,6 @@ Adapted from GitHub theme
     <!-- End of mathjax configuration -->
   </head>
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="d-flex justify-content-start container-fluid">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="custom-navbar-title">&nbsp;&nbsp;Menu</a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Dashboard</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="analyze_workers_comp2022.html"
-              >Python Notebook</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="call_nydata_api.js">API Script</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/saifao" target="_blank"
-              >GitHub</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="https://www.linkedin.com/in/aosaif/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Saif_Resume.pdf" target="_blank"
-              >Resume</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
   <body>
     <main>
       <div tabindex="-1" id="notebook" class="border-box-sizing">
@@ -13935,32 +13854,6 @@ Adapted from GitHub theme
 <span class="n">raw5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"workers_comp_claims2022_5.csv"</span><span class="p">)</span>
 <span class="n">raw6</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"workers_comp_claims2022_6.csv"</span><span class="p">)</span>
 </pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="output_wrapper">
-              <div class="output">
-                <div class="output_area">
-                  <div class="prompt"></div>
-
-                  <div
-                    class="output_subarea output_stream output_stderr output_text"
-                  >
-                    <pre>
-C:\Users\aosaif\AppData\Local\Temp\ipykernel_18272\1710737378.py:1: DtypeWarning: Columns (43) have mixed types. Specify dtype option on import or set low_memory=False.
-  raw1 = pd.read_csv(&#34;workers_comp_claims2022_1.csv&#34;)
-C:\Users\aosaif\AppData\Local\Temp\ipykernel_18272\1710737378.py:2: DtypeWarning: Columns (43) have mixed types. Specify dtype option on import or set low_memory=False.
-  raw2 = pd.read_csv(&#34;workers_comp_claims2022_2.csv&#34;)
-C:\Users\aosaif\AppData\Local\Temp\ipykernel_18272\1710737378.py:3: DtypeWarning: Columns (32,43) have mixed types. Specify dtype option on import or set low_memory=False.
-  raw3 = pd.read_csv(&#34;workers_comp_claims2022_3.csv&#34;)
-C:\Users\aosaif\AppData\Local\Temp\ipykernel_18272\1710737378.py:4: DtypeWarning: Columns (34,43,44,45,46,47,48,49,50,51,52,53) have mixed types. Specify dtype option on import or set low_memory=False.
-  raw4 = pd.read_csv(&#34;workers_comp_claims2022_4.csv&#34;)
-C:\Users\aosaif\AppData\Local\Temp\ipykernel_18272\1710737378.py:5: DtypeWarning: Columns (34) have mixed types. Specify dtype option on import or set low_memory=False.
-  raw5 = pd.read_csv(&#34;workers_comp_claims2022_5.csv&#34;)
-</pre
-                    >
                   </div>
                 </div>
               </div>
@@ -15315,22 +15208,6 @@ Name: count, Length: 219298, dtype: int64</pre
                 <div class="input_area">
                   <div class="highlight hl-ipython3">
                     <pre><span></span><span class="n">raw_dedup</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"workers_comp_clean2022.csv"</span><span class="p">)</span>
-</pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="cell-id=39eed686"
-            class="cell border-box-sizing code_cell rendered"
-          >
-            <div class="input">
-              <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-              <div class="inner_cell">
-                <div class="input_area">
-                  <div class="highlight hl-ipython3">
-                    <pre><span></span> 
 </pre>
                   </div>
                 </div>

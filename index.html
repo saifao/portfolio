@@ -34,6 +34,12 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="script.js"></script>
+    <style>
+      #notebook,
+      #apiscript {
+        text-align: center;
+      }
+    </style>
   </head>
 
   <body>
@@ -54,15 +60,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="analyze_workers_comp2022.html"
-                >Python Notebook</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="call_nydata_api.js">API Script</a>
+              <a class="nav-link" href="index.html">Workers Comp</a>
             </li>
             <li class="nav-item">
               <a
@@ -81,7 +79,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Saif_Resume.pdf" target="_blank"
+              <a
+                class="nav-link"
+                href="Saif_Formatted_Resume.pdf"
+                target="_blank"
                 >Resume</a
               >
             </li>
@@ -97,6 +98,32 @@
           width="1300"
           height="800"
           src="https://app.powerbi.com/view?r=eyJrIjoiODRkZWY1OWMtZjI2NC00OTYwLTgyNTktN2MyNjljNzdiYWEyIiwidCI6IjQ3N2VkZGRiLTQxOWYtNGNjZi1iYjk4LTMzMjQwZGNlOGJmMiIsImMiOjF9"
+          frameborder="0"
+          allowfullscreen="true"
+        ></iframe>
+      </div>
+
+      <div id="notebook" text-align: center>
+        <br /><br />
+        <h2>Data Cleanup</h2>
+        <iframe
+          title="Jupyter Notebook"
+          width="1300"
+          height="3150"
+          src="analyze_workers_comp2022.html"
+          frameborder="0"
+          allowfullscreen="true"
+        ></iframe>
+      </div>
+
+      <div id="apiscript" text-align: center>
+        <br />
+        <h2>Download data using API</h2>
+        <iframe
+          title="API Script"
+          width="1000"
+          height="400"
+          src="call_nydata_api.js"
           frameborder="0"
           allowfullscreen="true"
         ></iframe>
